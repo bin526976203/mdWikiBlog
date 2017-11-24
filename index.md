@@ -160,11 +160,11 @@ Arguments:
 
 Preview:
 
-[gimmick:googlemaps](Madison Square Garden, NY)
+[gimmick:baidumaps](Madison Square Garden, NY)
 
-[gimmick:googlemaps(maptype: 'terrain', zoom: 9, marker: 'false')](Eiffel Tower, Paris)
+[gimmick:baidumaps(maptype: 'terrain', zoom: 9, marker: 'false')](Eiffel Tower, Paris)
 
-[gimmick:googlemaps({maptype: 'satellite', zoom: 17})](Colloseum, Rome, Italy)
+[gimmick:baidumaps({maptype: 'satellite', zoom: 17})](Colloseum, Rome, Italy)
 * * *
 
 UML Diagrams via yUML.me
