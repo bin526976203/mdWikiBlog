@@ -27,7 +27,7 @@ The arguments are passed as a Javascript object. But for convienience reasons, y
 
 Gimmicks are designed to always chose sane default values when no parameters are given, therefore *most* gimmicks do not require any parameters to work.
 
-Note: Gimmicks will usually load code or stylesheets from the internet, therefore they won't work in offline mode
+Warning: Gimmicks will usually load code or stylesheets from the internet, therefore they won't work in offline mode
 
 
 Available Gimmicks
