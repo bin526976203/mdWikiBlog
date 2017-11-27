@@ -322,7 +322,7 @@ Note: Currently only support a single table on a page. You CAN have multiple cha
     
     [gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Bar', width: '660px', height: '300px'})]()
 
-Example:
+Exampl:
 
 | #  | Sprint          | Points | Sum | Avg  | Note |
 | -  | --------        |------- | --- | ---- | ---- |
