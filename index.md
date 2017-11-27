@@ -1,11 +1,15 @@
-Gimmicks
+Java
 =========
 
-```
-func main(){
-	fmt.print("hello world")
+```java
+public class Person{
+    private int age;
+    private String name;
+    public Person(int age, String name){
+        this.age = age;
+        this.name = name;
+    }
 }
-
 ```
 
 Gimmicks are little helper that bring plenty of dynamic features into your page. For example, you can use them to inline youtube videos, image slideshows or facebook like buttons.
