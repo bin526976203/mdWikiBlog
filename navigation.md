@@ -1,5 +1,6 @@
 # 莫
 
+[gimmick:theme (inverse: false)](cerulean)
 
 [gimmick:ForkMeOnGitHub](https://github.com/bin526976203/mdWikiBlog/)
 
