@@ -1,48 +1,29 @@
-莫贤彬的MarkdownBlog
+Gimmicks
 =========
 
-前言
-------------
-Hint: 本人是互联网金融领域研发人员，深耕互联网与金融领域多年，深度挖掘工作甚至商业中有高度价值的技术，系统整理，然后分享给大家。本人博客based Markdown,所有的核心内容都是markdown文件，大家如有兴趣可以fork我右上角的GitHub项目。
+Gimmicks are little helper that bring plenty of dynamic features into your page. For example, you can use them to inline youtube videos, image slideshows or facebook like buttons.
 
-Note: 本人博客使用100%html,js,css进行对markdown语法文件进行渲染,100%运行在客户端中。以下是本人博客使用的MarkDown语法的简介。
+To use Gimmicks, all you have to do is include some specially crafted link into your markdown file. For example, if you want to embed a Youtube video (instead of linking to it), you just have to insert a link to the video:
 
-代码块
-------------
-
-```java
-public class Person{
-    private int age;
-    private String name;
-    public Person(int age, String name){
-        this.age = age;
-        this.name = name;
-    }
-}
-```
-    ```java
-    public class Person{
-        private int age;
-        private String name;
-        public Person(int age, String name){
-            this.age = age;
-            this.name = name;
-        }
-    }
-    ```
-
-Gimmicks标签
-------------
-
-Gimmicks是语法小便签，带来大量的动态功能到网页中。例如，您可以使用它们来嵌入的YouTube视频，图像幻灯片或脸谱网喜欢按钮。
-所有你需要做的是包括一些特制的链接到你的Markdown文件。例如，如果你想嵌入一个YouTube视频（而不是链接它），你只需要插入一个视频链接：
 
     [](http://www.youtube.com/watch?v=RMINSD7MmT4)
 
-Warning: Gimmicks标签是需要加载网上资源，如果脱网状态，将无法起效。
+Gimmicks are realized via Javascript and work out of the box. Some gimmicks can be called with parameters on them, to customize their behaviour:
 
 
-Gimmicks标签汇总
+    [gimmick:ForkMeOnGitHub ({ color: 'red',  position: 'left' })](http://www.github.com/Dynalon/mdwiki)
+
+
+The arguments are passed as a Javascript object. But for convienience reasons, you can omit the curly brackets `{ }`. The gimmick name after `gimmick:` is also case-insensitive:
+
+    [gimmick:forkmeongithub(color: 'red', position: 'left')](http://www.github.com/Dynalon/mdwiki)
+
+Gimmicks are designed to always chose sane default values when no parameters are given, therefore *most* gimmicks do not require any parameters to work.
+
+Note: Gimmicks will usually load code or stylesheets from the internet, therefore they won't work in offline mode
+
+
+Available Gimmicks
 ===================
 * * *
 
@@ -55,9 +36,9 @@ Trigger words are case insensitive, and must be one of the following:
 
 Type       | Trigger
 -----------|---------
-Warning    |warning, achtung, attention, warnung, atenci贸n, guarda, advertimiento
-Note       |note, beachte
-Hint       |hint, tip, tipp, hinweis
+Warning    |warning, achtung, attention, warnung, atención, guarda, advertimiento, attenzione
+Note       |note, beachte, nota 
+Hint       |hint, tip, tipp, hinweis, suggerimento
 
 Preview:
 
@@ -122,14 +103,14 @@ More Examples:
 For more info and previews, check the [Facebook developer page](http://developers.facebook.com/docs/reference/plugins/like/).
 
 * * *
-Fork me on GitHub - Binke
+Fork me on GitHub - Ribbon
 --------------------------
 
-The popular github binke that is also present on this page. 
+The popular github ribbon that is also present on this page. See the [github page]() for a preview of the colors.
 
 Example:
 
-    [gimmick:ForkMeOnGitHub](https://github.com/bin526976203/mdWikiBlog/)
+    [gimmick:ForkMeOnGitHub](http://www.github.com/Dynalon/mdwiki)
 
 or with options:
 
@@ -194,14 +175,14 @@ Examples:
 
     [gimmick:yuml]([User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()])
 - - -
-[gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee->`want more coffee )
+[gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee´->`want more coffee´ )
 
-    [gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee->`want more coffee )
+    [gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee´->`want more coffee´ )
 
 - - -
-[gimmick:yuml (type: 'usecase', scale: 150) ]( [Customer]-`Sign In, [Customer]-`Buy Products )
+[gimmick:yuml (type: 'usecase', scale: 150) ]( [Customer]-`Sign In´, [Customer]-`Buy Products´ )
 
-    [gimmick:yuml (diag: 'usecase', scale: 150) ]( [Customer]-`Sign In, [Customer]-`Buy Products )
+    [gimmick:yuml (diag: 'usecase', scale: 150) ]( [Customer]-`Sign In´, [Customer]-`Buy Products´ )
 
 
 Arguments
@@ -330,7 +311,7 @@ Note: Currently only support a single table on a page. You CAN have multiple cha
     
     [gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Bar', width: '660px', height: '300px'})]()
 
-Exampl:
+Example:
 
 | #  | Sprint          | Points | Sum | Avg  | Note |
 | -  | --------        |------- | --- | ---- | ---- |
