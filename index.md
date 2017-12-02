@@ -7,6 +7,8 @@ Hint: 本人是互联网金融领域研发人员，深耕互联网与金融领�
 
 Note: 本人博客使用100%html,js,css进行对markdown语法文件进行渲染,100%运行在客户端中。以下是本人博客使用的MarkDown语法的简介。
 
+* * *
+
 代码块
 ------------
 
@@ -31,6 +33,8 @@ public class Person{
     }
     ```
 
+* * *
+
 Gimmicks标签
 ------------
 
@@ -41,10 +45,10 @@ Gimmicks是语法小便签，带来大量的动态功能到网页中。例如，
 
 Warning: Gimmicks标签是需要加载网上资源，如果脱网状态，将无法起效。
 
+* * *
 
 Gimmicks标签汇总
 ===================
-* * *
 
 Alerts提示标签
 ------
@@ -109,7 +113,7 @@ Arguments
   * defines the applied theme, *plain* for clean and *scruffy* for comic-style look
 
 
-Math
+Math展示
 -----
 [gimmick: math]()
 Math formulas are realized through the [MathJax](http://www.mathjax.org) library. To enable math formulas on a page, the `math` gimmick must be loaded by adding this link anywhere in the file:
@@ -145,7 +149,7 @@ $$ \int u \frac{dv}{dx}\,dx=uv-\int
 \left (  1 +\frac{1}{n} \right )^n
 $$
 
-Chart
+Chart图表
 -----
 
 Adds a chart to the screen using data from your Markdown table.
@@ -228,7 +232,7 @@ Note: To display the ribbon on every page, put the gimmick link into the `naviga
 
 * * *
 
-Disqus
+Disqus评论管理
 ------
 
 Adds comment / forum style functionality to your website. You first need to [signup with disqus](http://disqus.com) and use your disqus shortname as the link target.
