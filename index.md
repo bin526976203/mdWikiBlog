@@ -3,7 +3,7 @@
 
 前言
 ------------
-Hint: 本人是互联网金融领域研发人员，深耕互联网与金融领域多年，深度挖掘工作甚至商业中有高度价值的技术，系统整理，然后分享给大家。本人博客based Markdown,所有的核心内容都是markdown文件，大家如有兴趣可以fork我右上角的GitHub项目。
+Hint: 本人是互联网金融领域研发人员，深耕互联网与金融领域多年，深度挖掘工作甚至商业中有高度价值的技术，系统整理，然后分享给大家。本人博客based Markdown,所有的核心内容都是markdown文件，大家如有兴趣可以fork我右上角的GitHub项目。本人CSDN博客:http://blog.csdn.net/u012712901 .如需联系，请发邮件，邮箱在网页底部。
 
 Note: 本人博客使用100%html,js,css进行对markdown语法文件进行渲染,100%运行在客户端中。以下是本人博客使用的MarkDown语法的简介。
 
@@ -46,20 +46,20 @@ Gimmicks标签汇总
 ===================
 * * *
 
-Alerts
+Alerts提示标签
 ------
 
-Alerts are automatically placed whenever you start a paragraph with a special *trigger* word, that *has* to be followed by a colon `:` or exclamation mark `!`.
+每当你用一个特殊的触发词来启动一个段落时，就会自动地将此段落进行颜色修饰。
 
-Trigger words are case insensitive, and must be one of the following:
+触发词不区分大小写，必须是下列内容之一：
 
-Type       | Trigger
+**类型**    | **触发词**
 -----------|---------
-Warning    |warning, achtung, attention, warnung, atenci贸n, guarda, advertimiento
-Note       |note, beachte
-Hint       |hint, tip, tipp, hinweis
+Warning    |warning, achtung, attention, warnung, atención, guarda, advertimiento, attenzione
+Note       |note, beachte, nota 
+Hint       |hint, tip, tipp, hinweis, suggerimento
 
-Preview:
+效果:
 
 Attention: This text is important.
 
@@ -69,122 +69,12 @@ Hint: This is a hint.
 
 * * *
 
-GitHub Gists
-------------
-
-Gists on github can be embedded by passing their numeric id:
-
-    [gimmick:gist](5641564)
-
-Preview:
-
-[gimmick:gist](5641564)
-
-* * *
-
-
-Facebook Likebutton
--------------------
-
-Take any link of a profile page on facebook and put it into a regular markdown link, prefixed by `gimmick:FacebookLike`.
-
-Example:
-
-    [gimmick:FacebookLike](http://www.facebook.com)
-
-Preview:
-
-[gimmick:FacebookLike](http://www.facebook.com)
-
-Arguments:
-
-* **layout**
-  * is one of [ 'standard', 'boxcount', 'buttoncount' ]
-  * defines the layout style of the like button
-  * default is 'standard'
-* **showfaces**
-  * *true* or *false*
-  * whether or not to show the profile images along with the comments
-  * default is *true*
-
-More Examples:
-
-    1. [gimmick:FacebookLike ( layout: 'standard', showfaces: false) ](http://www.facebook.com)
-    2. [gimmick:FacebookLike ( layout: 'boxcount', showfaces: false) ](http://www.facebook.com)
-    3. [gimmick:FacebookLike ( layout: 'buttoncount') ](http://www.facebook.com)
-
-1. [gimmick:FacebookLike ( layout: 'standard', showfaces: false) ](http://www.facebook.com)
-
-2. [gimmick:FacebookLike ( layout: 'boxcount', showfaces: false) ](http://www.facebook.com)
-
-3. [gimmick:FacebookLike ( layout: 'buttoncount') ](http://www.facebook.com)
-
-For more info and previews, check the [Facebook developer page](http://developers.facebook.com/docs/reference/plugins/like/).
-
-* * *
-Fork me on GitHub - Binke
---------------------------
-
-The popular github binke that is also present on this page. 
-
-Example:
-
-    [gimmick:ForkMeOnGitHub](https://github.com/bin526976203/mdWikiBlog/)
-
-or with options:
-
-    [gimmick:ForkMeOnGitHub (position: 'left', color: 'darkblue') ](http://www.github.com/Dynalon/mdwiki)
-
-Arguments:
-
-* **color**
-  * is one of [ 'red', 'darkblue', 'green', 'orange', 'white', 'gray' ]
-  * defines the color of the ribbon
-* **position**
-  * is one of [ 'left', 'right' ]
-  * defines the upper-corner position of the ribbon
-
-Note: To display the ribbon on every page, put the gimmick link into the `navigation.md` file.
-
-* * *
-
-Google Maps
------------
-
-Allows to embed a basic map from [Google Maps](http://maps.google.com), centering at any given address specified via the link target.
-
-Example Code:
-
-    [gimmick:googlemaps](Madison Square Garden, NY)
-
-    [gimmick:googlemaps(maptype: 'terrain', zoom: 9, marker: 'false')](Eiffel Tower, Paris)
-
-    [gimmick:googlemaps(maptype: 'satellite', zoom: 17)](Colloseum, Rome, Italy)
-
-Arguments:
-
-* **maptype**
-  * is one of [ 'terrain', 'roadmap', 'satellite', 'hybrid' ]
-  * defined the type of the map
-* **zoom**
-  * Defines the zoom level of the map (default: 11)
-  * The minimum/maximum zoomlevel depends heavily on the **maptype**. Best way to find a fitting value is just try'n'error.
-
-Preview:
-
-[gimmick:googlemaps](Madison Square Garden, NY)
-
-[gimmick:googlemaps(maptype: 'terrain', zoom: 9, marker: 'false')](Eiffel Tower, Paris)
-
-[gimmick:googlemaps({maptype: 'satellite', zoom: 17})](Colloseum, Rome, Italy)
-* * *
-
-UML Diagrams via yUML.me
+UML 图表 based yUML.me
 -----
 
-Embeds diagrams from the excellent [yUML.me](http://yuml.me) service (see their website for documentation).
+基于优秀的yUML.me进行UML图表创作 [yUML.me](http://yuml.me)  (see their website for documentation).
 
-Examples:
+_**例子:**_
 
 [gimmick:yuml]( [HttpContext]uses -.->[Response] )
 
@@ -194,7 +84,7 @@ Examples:
 
     [gimmick:yuml]([User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()])
 - - -
-[gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee->`want more coffee )
+[gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee´->`want more coffee´ )
 
     [gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee->`want more coffee )
 
@@ -202,7 +92,6 @@ Examples:
 [gimmick:yuml (type: 'usecase', scale: 150) ]( [Customer]-`Sign In, [Customer]-`Buy Products )
 
     [gimmick:yuml (diag: 'usecase', scale: 150) ]( [Customer]-`Sign In, [Customer]-`Buy Products )
-
 
 Arguments
 
@@ -256,52 +145,6 @@ $$ \int u \frac{dv}{dx}\,dx=uv-\int
 \left (  1 +\frac{1}{n} \right )^n
 $$
 
-Twitter
--------
-
-Creates a simple twitter follow button from a given twitter screen name.
-
-Example:
-
-    [gimmick:TwitterFollow](@timodoerr)
-
-Preview:
-
-[gimmick:TwitterFollow](@timodoerr)
-
-Youtube
--------
-
-Whenever you insert a regular link with an empty caption that points to a video on `youtube.com` or `youtu.be`, the link is automatically turned into an embedded iframe, which will display a preview thumbnail of the video on your website.
-
-Example:
-
-    This will show the video preview on your website:
-    [](http://www.youtube.com/watch?v=RMINSD7MmT4)
-
-[](http://www.youtube.com/watch?v=RMINSD7MmT4)
-
-To omit the preview and just get a regular link, add a caption:
-
-    [Click to see an awesome video](http://www.youtube.com/watch?v=RMINSD7MmT4)
-
-[Click to see an awesome video](http://www.youtube.com/watch?v=RMINSD7MmT4)
-
-* * *
-
-Disqus
-------
-
-Adds comment / forum style functionality to your website. You first need to [signup with disqus](http://disqus.com) and use your disqus shortname as the link target.
-
-    [gimmick:Disqus](your_disqus_shortname)
-
-Preview:
-
-[gimmick:Disqus](mdwiki)
-
-Disqus is always embedded at the bottom of a page, so scroll down this site to see a preview.
-
 Chart
 -----
 
@@ -330,7 +173,7 @@ Note: Currently only support a single table on a page. You CAN have multiple cha
     
     [gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Bar', width: '660px', height: '300px'})]()
 
-Exampl:
+Example:
 
 | #  | Sprint          | Points | Sum | Avg  | Note |
 | -  | --------        |------- | --- | ---- | ---- |
@@ -344,3 +187,56 @@ Exampl:
 [gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Line', width: '660px', height: '300px'})]()
 
 [gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Bar', width: '660px', height: '300px'})]()
+
+* * *
+
+GitHub Gists
+------------
+
+Gists on github can be embedded by passing their numeric id:
+
+    [gimmick:gist](5641564)
+
+效果:
+
+[gimmick:gist](5641564)
+
+* * *
+Fork me on GitHub - Binke
+--------------------------
+
+The popular github binke that is also present on this page. 
+
+Example:
+
+    [gimmick:ForkMeOnGitHub](https://github.com/bin526976203/mdWikiBlog/)
+
+or with options:
+
+    [gimmick:ForkMeOnGitHub (position: 'left', color: 'darkblue') ](http://www.github.com/Dynalon/mdwiki)
+
+Arguments:
+
+* **color**
+  * is one of [ 'red', 'darkblue', 'green', 'orange', 'white', 'gray' ]
+  * defines the color of the ribbon
+* **position**
+  * is one of [ 'left', 'right' ]
+  * defines the upper-corner position of the ribbon
+
+Note: To display the ribbon on every page, put the gimmick link into the `navigation.md` file.
+
+* * *
+
+Disqus
+------
+
+Adds comment / forum style functionality to your website. You first need to [signup with disqus](http://disqus.com) and use your disqus shortname as the link target.
+
+    [gimmick:Disqus](your_disqus_shortname)
+
+Preview:
+
+[gimmick:Disqus](mdwiki)
+
+Disqus is always embedded at the bottom of a page, so scroll down this site to see a preview.

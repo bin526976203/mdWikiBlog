@@ -16,16 +16,22 @@ public class Hello{
 }
 ```
 
+- - -
+
 Note: 二、编译代码流程
 
  * 启动命令行窗口(Win+R)
  * 使用命令行进入源代码所在目录
  * 使用编辑命令: **javac Hello.java**,编译成功后同目录下将出现Hello.class文件
  
+- - -
+
 Note: 三、运行代码流程
 
  * 运行命令: **java Hello.java**
  * 结果将是在控制台输出: Hello world
+
+- - -
  
 Note: 四、程序分析
 
@@ -43,6 +49,7 @@ Note: 四、程序分析
 | 8  | 功能执行代码，表示打印一行文本信息:Hello,world|
 | 9  | 语句结束符号|
 
+* * *
 
 三大注释方式
 ------------
